@@ -9,4 +9,6 @@ class Petition extends Model
 {
     /** @use HasFactory<\Database\Factories\PetitionFactory> */
     use HasFactory;
+
+    protected $fillable = ['title', 'description', 'category', 'author', 'signees'];
 }
